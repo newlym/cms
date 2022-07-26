@@ -28,12 +28,6 @@
       "type": "biginteger",
       "min": "0",
       "required": true
-    },
-    "products": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::product.product",
-      "inversedBy": "shipping_rates"
     }
   }
 }

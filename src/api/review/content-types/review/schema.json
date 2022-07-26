@@ -35,12 +35,6 @@
       "min": 0,
       "max": 5,
       "required": true
-    },
-    "product": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::product.product",
-      "inversedBy": "reviews"
     }
   }
 }

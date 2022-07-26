@@ -41,17 +41,20 @@
       "required": true,
       "min": "0"
     },
-    "shipping_rates": {
+    "related_products": {
       "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::shipping-rate.shipping-rate",
-      "inversedBy": "products"
+      "relation": "oneToMany",
+      "target": "api::product.product"
     },
     "reviews": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::review.review",
-      "mappedBy": "product"
+      "target": "api::review.review"
+    },
+    "shipping_rates": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shipping-rate.shipping-rate"
     }
   }
 }
