@@ -36,7 +36,7 @@
       "type": "biginteger",
       "required": true
     },
-    "inventoryAvailable": {
+    "minQuantity": {
       "type": "biginteger",
       "required": true,
       "min": "0"
@@ -55,6 +55,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::shipping-rate.shipping-rate"
+    },
+    "maxQuantity": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
     }
   }
 }
