@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_bundle_bundle_items",
+  "info": {
+    "displayName": "BundleItem",
+    "icon": "boxes"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "unitPrice": {
+      "type": "biginteger",
+      "required": true,
+      "min": "0"
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    }
+  }
+}
